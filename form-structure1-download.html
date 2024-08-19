@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Form structure: Task 1</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <!-- Separate out the first two and second two form fields into two distinct containers, 
+       each with a descriptive legend (use "Personal details" for the first two, and 
+       "Comment information" for the second two). -->
+      <fieldset>
+      <legend>Personal details</legend>
+        <label for="name">Name:</label> <!-- id=email -->
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" title="Enter how old are you"><br>
+    
+      </fieldset>
+
+      <fieldset>
+        <legend>Comment Information</legend>
+          <label for="comment">Comment:</label>
+          <input type="text" id="comment" name="comment">
+          <small>Write what you want to say.</small><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+      </fieldset>
+    </form>
+  </body>
+
+</html>
